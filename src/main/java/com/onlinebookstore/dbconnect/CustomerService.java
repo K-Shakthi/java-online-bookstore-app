@@ -21,7 +21,7 @@ public class CustomerService {
 			
 			System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------");
 				
-			System.out.printf("%20s %16s %24s %27s %19s %22s\n","BookId","BookName","AuthorName","Publication","Genre","Price");
+			System.out.printf("%-20s %-16s %-24s %-27s %-19s %-22s\n","BookId","BookName","AuthorName","Publication","Genre","Price");
 	
 			System.out.println();
 			
@@ -29,7 +29,7 @@ public class CustomerService {
 			
 			while(result.next())
 			{
-				System.out.format("%18s %20s %22s %29s %24s %15s\n",result.getInt(1),result.getString(2),result.getString(3),result.getString(4),result.getString(5),result.getLong(6));
+				System.out.format("%-18s %-20s %-22s %-29s %-24s %-15s\n",result.getInt(1),result.getString(2),result.getString(3),result.getString(4),result.getString(5),result.getLong(6));
 			}
 			
 			System.out.println();
@@ -66,7 +66,7 @@ public class CustomerService {
 	
 	public static void about()
 	{
-		System.out.println("We are providing a wide range of books in our Book Store \nYou can access it easily");
+		System.out.println("We are providing a wide range of books in our Book Store. \nYou can access it easily.");
 	}
 	
 	public static void help_desk()
